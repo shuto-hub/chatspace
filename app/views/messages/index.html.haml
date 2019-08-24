@@ -1,33 +1,23 @@
-  .remind
-    %p.remind-message グループを作成しました
-  .contents
-    .contents__left
-      .contents__left__header
-        %p.contents__left__header-name test  
-        %li.contents__left__header-name-icon= fa_icon 'edit'
-        %li.contents__left__header-name-icon= fa_icon 'cog'
-      .contents__left__group
-        %p.contents__left__group-name しゅうと
-        %p.contents__left__group-message こんにちは！
-    .contents__chat
-      .contents__chat__header
-        .contents__chat__header__left
-          %p.contents__chat__header__left-title TEST CHAT
-          %p.contents__chat__header__left-member Member：test しゅうと
-        .contents__chat__header-btn Edit
-      .contents__chat__messages
-        .contents__chat__messages__message
-          .contents__chat__messages__message__upper
-            %p.contents__chat__messages__message__upper-user しゅうと
-            %p.contents__chat__messages__message__upper-date 2019/08/21(Wed) 15:00:00
-        %p.contents__chat__messages__message-text test!
-      .contents__chat__bottom
-        %form.contents__chat__bottom__form
-          .contents__chat__bottom__form-box
-            .contents__chat__bottom__form-box-input
-              %input.contents__chat__bottom__form-box-input-message{name: "message[content]", placeholder: "type a message", type: "text"}
-                .contents__chat__bottom__form-box-input-message-picture
-                  %label{for: "image"}
-                    = fa_icon 'image'
-                    %input{name: "image", type: "file", class: "hidden", id: "image"}
-          %input.contents__chat__bottom__form-box-submit{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}
+.contents
+  = render partial: "side_bar"
+  .contents__chat
+    .contents__chat__header
+      .contents__chat__header__left
+        %p.contents__chat__header__left-title TEST CHAT
+        %p.contents__chat__header__left-member Member：test しゅうと
+      .contents__chat__header-btn Edit
+    .contents__chat__messages
+      = render @messages
+      -# .contents__chat__messages__message
+      -#   .contents__chat__messages__message__upper
+      -#     %p.contents__chat__messages__message__upper-user しゅうと
+      -#     %p.contents__chat__messages__message__upper-date 2019/08/21(Wed) 15:00:00
+      -# %p.contents__chat__messages__message-text test!
+    .contents__chat__bottom
+      = form_for [@group, @message],class: 'contents__chat__bottom__form' do |f|
+        = f.text_field :content, class: 'contents__chat__bottom__form-box', placeholder: 'type a message'
+        .contents__chat__bottom__form-box-input-message
+          = f.label :image, class: 'contents__chat__bottom__form-box' do
+            = fa_icon 'picture-o', class: 'contents__chat__bottom__form-box-input-message-picture-icon'
+            = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'contents__chat__bottom__form-box-submit'

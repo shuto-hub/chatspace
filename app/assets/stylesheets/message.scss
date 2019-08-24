@@ -4,6 +4,14 @@
 
 $white: #FFFFFF;
 
+.icon {
+  list-style: none;
+  text-align: right;
+  font-weight: bold;
+  color: $white;
+  margin-left:0.3rem;
+  }
+
 .remind {
   width: 100%;
   background-color: #38AEF0;
