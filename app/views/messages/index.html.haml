@@ -15,9 +15,9 @@
       -# %p.contents__chat__messages__message-text test!
     .contents__chat__bottom
       = form_for [@group, @message],class: 'contents__chat__bottom__form' do |f|
-        = f.text_field :content, class: 'contents__chat__bottom__form-box', placeholder: 'type a message'
-        .contents__chat__bottom__form-box-input-message
-          = f.label :image, class: 'contents__chat__bottom__form-box' do
-            = fa_icon 'picture-o', class: 'contents__chat__bottom__form-box-input-message-picture-icon'
+        .contents__chat__bottom__form-box-message
+          = f.text_field :content, class: 'contents__chat__bottom__form-box', placeholder: 'type a message'
+          = f.label :image, class: 'contents__chat__bottom__form-box-message-picture' do
+            = fa_icon 'picture-o', class: 'contents__chat__bottom__form-box-message-picture-icon'
             = f.file_field :image, class: 'hidden'
         = f.submit 'Send', class: 'contents__chat__bottom__form-box-submit'
