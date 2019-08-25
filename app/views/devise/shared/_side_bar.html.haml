@@ -13,4 +13,5 @@
       =link_to group_messages_path(group)do
         %p.contents__left__group-name
           = group.name
-        %p.contents__left__group-message こんにちは！
+        %p.contents__left__group-message
+          = group.show_last_message
