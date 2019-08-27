@@ -3,10 +3,10 @@
     %p.contents__left__header-name
       = current_user.name
     %li.contents__left__header-name-icon
-      = link_to new_group_path do
+      = link_to new_group_path, data: {"turbolinks" => false} do
         = fa_icon 'edit', class: 'icon'
     %li.contents__left__header-name-icon
-      = link_to edit_user_path(current_user) do
+      = link_to edit_user_path(current_user), data: {"turbolinks" => false} do
         = fa_icon 'cog', class: 'icon'
   .contents__left__group
     - current_user.groups.each do |group|

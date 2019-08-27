@@ -3,9 +3,17 @@
   .contents__chat
     .contents__chat__header
       .contents__chat__header__left
-        %p.contents__chat__header__left-title TEST CHAT
-        %p.contents__chat__header__left-member Member：test しゅうと
-      .contents__chat__header-btn Edit
+        .contents__chat__header__left-title
+          = @group.name
+        .contents__chat__header__left-member
+          Members:
+          - @group.users.each do |user|
+            = user.name
+      .editbutton
+        %ul
+          = link_to edit_group_path(@group.id), data: {"turbolinks" => false} do
+            %li.contents__chat__header-btn
+              Edit
     .contents__chat__messages
       = render @messages
       -# .contents__chat__messages__message
