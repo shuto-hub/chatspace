@@ -50,7 +50,6 @@ $(function() {
       $(this).parent().remove();
       var html = buildAddUser(name, user_id);
       $('#member_add_result').append(html);
-      console.log(html)
     });
     　$(document).on("click", '.user-search-remove', function() {
       $(this).parent().remove();

@@ -31493,3 +31493,56 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 52ms (Views: 46.0ms | ActiveRecord: 1.9ms)
 
 
+Started GET "/groups/15/messages" for ::1 at 2019-08-27 11:28:39 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"15"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (1.1ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (16.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered messages/index.html.haml within layouts/application (39.8ms)
+  Rendered layouts/_notifications.html.haml (5.3ms)
+Completed 200 OK in 219ms (Views: 192.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 11:28:41 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (17.4ms)
+  Rendered groups/edit.html.haml within layouts/application (21.3ms)
+  Rendered layouts/_notifications.html.haml (2.0ms)
+Completed 200 OK in 59ms (Views: 53.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 11:30:46 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (25.0ms)
+  Rendered groups/edit.html.haml within layouts/application (35.6ms)
+  Rendered layouts/_notifications.html.haml (2.4ms)
+Completed 200 OK in 169ms (Views: 121.7ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 11:30:50 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE('%t%')) AND (`users`.`id` != 4)[0m
+  Rendered users/search.json.jbuilder (1.7ms)
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.6ms)
+
+
