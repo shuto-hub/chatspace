@@ -31546,3 +31546,902 @@ Processing by UsersController#search as JSON
 Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 11:53:47 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (22.4ms)
+  Rendered groups/edit.html.haml within layouts/application (26.4ms)
+  Rendered layouts/_notifications.html.haml (2.3ms)
+Completed 200 OK in 129ms (Views: 101.1ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 11:53:50 +0900
+  
+SyntaxError (/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:14: syntax error, unexpected keyword_and, expecting ')'
+...', "%#{params[:keyword]}%", and id != ?...current_user)
+...                            ^~~
+/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting keyword_end
+...%", and id != ?...current_user)
+...                              ^):
+  
+app/controllers/users_controller.rb:14: syntax error, unexpected keyword_and, expecting ')'
+app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting keyword_end
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.7ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (80.6ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 11:54:10 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (18.7ms)
+  Rendered groups/edit.html.haml within layouts/application (21.6ms)
+  Rendered layouts/_notifications.html.haml (1.7ms)
+Completed 200 OK in 67ms (Views: 41.9ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 11:54:12 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (undefined local variable or method `id' for #<UsersController:0x00007fc5bbe81970>):
+  
+app/controllers/users_controller.rb:14:in `search'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (145.4ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 11:54:31 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (16.8ms)
+  Rendered groups/edit.html.haml within layouts/application (19.5ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 61ms (Views: 38.5ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 11:54:33 +0900
+  
+SyntaxError (/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected keyword_and, expecting keyword_end
+    and id != ?...current_user
+    ^~~):
+  
+app/controllers/users_controller.rb:15: syntax error, unexpected keyword_and, expecting keyword_end
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.5ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (67.7ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 11:55:52 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (19.3ms)
+  Rendered groups/edit.html.haml within layouts/application (23.0ms)
+  Rendered layouts/_notifications.html.haml (2.5ms)
+Completed 200 OK in 73ms (Views: 46.4ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 11:55:54 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::PreparedStatementInvalid (wrong number of bind variables (2 for 1) in: name LIKE(?)):
+  
+app/controllers/users_controller.rb:14:in `search'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.9ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (68.9ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 11:56:08 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (29.6ms)
+  Rendered groups/edit.html.haml within layouts/application (33.3ms)
+  Rendered layouts/_notifications.html.haml (1.8ms)
+Completed 200 OK in 96ms (Views: 63.5ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 11:56:12 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE('%t%'))[0m
+  Rendered users/search.json.jbuilder (1.5ms)
+Completed 200 OK in 18ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 11:59:27 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (17.9ms)
+  Rendered groups/edit.html.haml within layouts/application (21.8ms)
+  Rendered layouts/_notifications.html.haml (2.0ms)
+Completed 200 OK in 70ms (Views: 46.7ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 11:59:28 +0900
+  
+SyntaxError (/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ',', expecting =>
+...current_user.id,'name LIKE(?)', "%#{params[:keyword]}%")
+...                              ^
+/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+...E(?)', "%#{params[:keyword]}%")
+...                              ^):
+  
+app/controllers/users_controller.rb:15: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (68.7ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:00:17 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (10.2ms)
+  Rendered groups/edit.html.haml within layouts/application (13.7ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:00:19 +0900
+  
+SyntaxError (/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ',', expecting =>
+...current_user.id,'name LIKE(?)', "%#{params[:keyword]}%")
+...                              ^
+/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+...E(?)', "%#{params[:keyword]}%")
+...                              ^):
+  
+app/controllers/users_controller.rb:15: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (67.4ms)
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:02:01 +0900
+  
+SyntaxError (/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ',', expecting =>
+...current_user.id,'name LIKE(?)', "%#{params[:keyword]}%")
+...                              ^
+/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+...E(?)', "%#{params[:keyword]}%")
+...                              ^):
+  
+app/controllers/users_controller.rb:15: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.7ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (72.8ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:07:11 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (18.2ms)
+  Rendered groups/edit.html.haml within layouts/application (22.6ms)
+  Rendered layouts/_notifications.html.haml (1.6ms)
+Completed 200 OK in 68ms (Views: 43.6ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:07:13 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `not_in' for "%t%":String):
+  
+app/controllers/users_controller.rb:15:in `search'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.5ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (66.6ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:07:25 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (17.4ms)
+  Rendered groups/edit.html.haml within layouts/application (20.2ms)
+  Rendered layouts/_notifications.html.haml (1.4ms)
+Completed 200 OK in 70ms (Views: 39.6ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:07:26 +0900
+  
+SyntaxError (/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected '.', expecting ')'
+...(?)', "%#{params[:keyword]}%",.not_in(current_user.id))
+...                              ^
+/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+...d]}%",.not_in(current_user.id))
+...                              ^):
+  
+app/controllers/users_controller.rb:15: syntax error, unexpected '.', expecting ')'
+app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.5ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (69.7ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:08:04 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (18.7ms)
+  Rendered groups/edit.html.haml within layouts/application (23.0ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 81ms (Views: 50.7ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:08:05 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `not_in' for "t":String):
+  
+app/controllers/users_controller.rb:15:in `search'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.5ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (67.1ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:09:45 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (17.1ms)
+  Rendered groups/edit.html.haml within layouts/application (19.9ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 66ms (Views: 39.8ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:09:46 +0900
+  
+SyntaxError (/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected keyword_and, expecting ')'
+...= User.where('name LIKE(?)' and not current_user.id, "%#{par...
+...                            ^~~
+/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+...KE(?)' and not current_user.id, "%#{params[:keyword]}%")
+...                              ^
+/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+...er.id, "%#{params[:keyword]}%")
+...                              ^):
+  
+app/controllers/users_controller.rb:15: syntax error, unexpected keyword_and, expecting ')'
+app/controllers/users_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (69.8ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:10:01 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (16.8ms)
+  Rendered groups/edit.html.haml within layouts/application (19.6ms)
+  Rendered layouts/_notifications.html.haml (1.6ms)
+Completed 200 OK in 66ms (Views: 41.2ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:10:03 +0900
+  
+SyntaxError (/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected keyword_and, expecting ')'
+...= User.where('name LIKE(?)' and not id,current_user.id, "%#{...
+...                            ^~~
+/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...er.id, "%#{params[:keyword]}%")
+...                              ^):
+  
+app/controllers/users_controller.rb:15: syntax error, unexpected keyword_and, expecting ')'
+app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.7ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (67.9ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:10:14 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (19.2ms)
+  Rendered groups/edit.html.haml within layouts/application (22.4ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 68ms (Views: 44.1ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:10:15 +0900
+  
+SyntaxError (/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected keyword_and, expecting ')'
+...= User.where('name LIKE(?)' and not id?,current_user.id, "%#...
+...                            ^~~
+/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...er.id, "%#{params[:keyword]}%")
+...                              ^):
+  
+app/controllers/users_controller.rb:15: syntax error, unexpected keyword_and, expecting ')'
+app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.5ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (67.1ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:15:22 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (18.0ms)
+  Rendered groups/edit.html.haml within layouts/application (21.3ms)
+  Rendered layouts/_notifications.html.haml (1.4ms)
+Completed 200 OK in 66ms (Views: 42.0ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:15:24 +0900
+  
+SyntaxError (/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected keyword_and, expecting ')'
+...= User.where('name LIKE(?)' and id != ?...current_user, "%#{...
+...                            ^~~
+/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+...?)' and id != ?...current_user, "%#{params[:keyword]}%")
+...                              ^
+/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+..._user, "%#{params[:keyword]}%")
+...                              ^):
+  
+app/controllers/users_controller.rb:15: syntax error, unexpected keyword_and, expecting ')'
+app/controllers/users_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (70.2ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:15:36 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (20.2ms)
+  Rendered groups/edit.html.haml within layouts/application (23.2ms)
+  Rendered layouts/_notifications.html.haml (1.7ms)
+Completed 200 OK in 79ms (Views: 45.0ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:15:37 +0900
+  
+SyntaxError (/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected keyword_and, expecting ')'
+... User.where('name LIKE(?)' ,and id != ?...current_user, "%#{...
+...                            ^~~
+/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+...)' ,and id != ?...current_user, "%#{params[:keyword]}%")
+...                              ^
+/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+..._user, "%#{params[:keyword]}%")
+...                              ^):
+  
+app/controllers/users_controller.rb:15: syntax error, unexpected keyword_and, expecting ')'
+app/controllers/users_controller.rb:15: syntax error, unexpected ',', expecting keyword_end
+app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.9ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (69.3ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:15:59 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (17.1ms)
+  Rendered groups/edit.html.haml within layouts/application (20.1ms)
+  Rendered layouts/_notifications.html.haml (1.6ms)
+Completed 200 OK in 64ms (Views: 39.7ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:16:01 +0900
+  
+SyntaxError (/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected keyword_and, expecting ')'
+...)', "%#{params[:keyword]}%",and id != ?...current_user)
+...                            ^~~
+/Users/shuto/projects/chatspace/app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+...}%",and id != ?...current_user)
+...                              ^):
+  
+app/controllers/users_controller.rb:15: syntax error, unexpected keyword_and, expecting ')'
+app/controllers/users_controller.rb:15: syntax error, unexpected ')', expecting keyword_end
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.5ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (68.1ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:16:58 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (20.2ms)
+  Rendered groups/edit.html.haml within layouts/application (23.0ms)
+  Rendered layouts/_notifications.html.haml (2.0ms)
+Completed 200 OK in 83ms (Views: 49.7ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:16:59 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE('%t%'))[0m
+Completed 500 Internal Server Error in 169ms (ActiveRecord: 0.4ms)
+
+
+  
+NameError (undefined local variable or method `id' for #<UsersController:0x00007fc5be83bc98>):
+  
+app/controllers/users_controller.rb:15:in `search'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.5ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (126.7ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:18:54 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (15.4ms)
+  Rendered groups/edit.html.haml within layouts/application (18.1ms)
+  Rendered layouts/_notifications.html.haml (1.6ms)
+Completed 200 OK in 59ms (Views: 37.2ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:18:56 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::PreparedStatementInvalid (wrong number of bind variables (3 for 2) in: id not in (?) AND id != ?):
+  
+app/controllers/users_controller.rb:15:in `search'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (67.6ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:19:40 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (19.9ms)
+  Rendered groups/edit.html.haml within layouts/application (22.6ms)
+  Rendered layouts/_notifications.html.haml (2.1ms)
+Completed 200 OK in 74ms (Views: 46.4ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:19:42 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::PreparedStatementInvalid (wrong number of bind variables (3 for 2) in: id not in (?) AND id != ?):
+  
+app/controllers/users_controller.rb:15:in `search'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.7ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (69.1ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:20:55 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (22.7ms)
+  Rendered groups/edit.html.haml within layouts/application (25.8ms)
+  Rendered layouts/_notifications.html.haml (1.9ms)
+Completed 200 OK in 77ms (Views: 49.2ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:20:56 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (id not in ('current_user.id') AND name LIKE('%t%'))[0m
+  Rendered users/search.json.jbuilder (11.5ms)
+Completed 200 OK in 29ms (Views: 18.1ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:21:17 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (17.8ms)
+  Rendered groups/edit.html.haml within layouts/application (20.7ms)
+  Rendered layouts/_notifications.html.haml (1.6ms)
+Completed 200 OK in 67ms (Views: 42.1ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:21:19 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (id not in ('id: current_user.id') AND name LIKE('%t%'))[0m
+  Rendered users/search.json.jbuilder (1.3ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:23:02 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (18.2ms)
+  Rendered groups/edit.html.haml within layouts/application (21.2ms)
+  Rendered layouts/_notifications.html.haml (1.8ms)
+Completed 200 OK in 69ms (Views: 42.1ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:23:04 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (29.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (id not in (current_user.id) AND name LIKE('%t%'))[0m
+  Rendered users/search.json.jbuilder (32.0ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 29.5ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'current_user.id' in 'where clause': SELECT `users`.* FROM `users` WHERE (id not in (current_user.id) AND name LIKE('%t%'))):
+    1: json.array! @users do |user|
+    2:   json.id user.id
+    3:   json.name user.name
+    4: end
+  
+app/views/users/search.json.jbuilder:1:in `_app_views_users_search_json_jbuilder__1162724476312209328_70243625751280'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (46.6ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:23:14 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (17.0ms)
+  Rendered groups/edit.html.haml within layouts/application (19.7ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 63ms (Views: 39.2ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:23:15 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (id not in current_user.id AND name LIKE('%t%'))[0m
+  Rendered users/search.json.jbuilder (3.6ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'current_user.id AND name LIKE('%t%'))' at line 1: SELECT `users`.* FROM `users` WHERE (id not in current_user.id AND name LIKE('%t%'))):
+    1: json.array! @users do |user|
+    2:   json.id user.id
+    3:   json.name user.name
+    4: end
+  
+app/views/users/search.json.jbuilder:1:in `_app_views_users_search_json_jbuilder__1162724476312209328_70243627767820'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (46.2ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:23:44 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (18.6ms)
+  Rendered groups/edit.html.haml within layouts/application (21.4ms)
+  Rendered layouts/_notifications.html.haml (2.3ms)
+Completed 200 OK in 66ms (Views: 41.8ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:23:46 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::PreparedStatementInvalid (wrong number of bind variables (2 for 1) in: id not in (current_user.id) AND name LIKE(?)):
+  
+app/controllers/users_controller.rb:15:in `search'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.6ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (67.7ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:24:01 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (12.9ms)
+  Rendered groups/edit.html.haml within layouts/application (17.1ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 59ms (Views: 52.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:24:02 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (18.2ms)
+  Rendered groups/edit.html.haml within layouts/application (20.9ms)
+  Rendered layouts/_notifications.html.haml (1.6ms)
+Completed 200 OK in 70ms (Views: 43.5ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:24:03 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (id not in ('current_user.id') AND name LIKE('%t%'))[0m
+  Rendered users/search.json.jbuilder (1.6ms)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:24:15 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (18.6ms)
+  Rendered groups/edit.html.haml within layouts/application (21.3ms)
+  Rendered layouts/_notifications.html.haml (1.6ms)
+Completed 200 OK in 72ms (Views: 45.9ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:24:16 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (not in ('current_user.id') AND name LIKE('%t%'))[0m
+  Rendered users/search.json.jbuilder (2.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in ('current_user.id') AND name LIKE('%t%'))' at line 1: SELECT `users`.* FROM `users` WHERE (not in ('current_user.id') AND name LIKE('%t%'))):
+    1: json.array! @users do |user|
+    2:   json.id user.id
+    3:   json.name user.name
+    4: end
+  
+app/views/users/search.json.jbuilder:1:in `_app_views_users_search_json_jbuilder__1162724476312209328_70243608061320'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (45.2ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:24:45 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (17.7ms)
+  Rendered groups/edit.html.haml within layouts/application (20.5ms)
+  Rendered layouts/_notifications.html.haml (1.6ms)
+Completed 200 OK in 65ms (Views: 42.1ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:24:50 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (id not in ('current_user.id') AND name LIKE('%t%'))[0m
+  Rendered users/search.json.jbuilder (1.4ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/groups/15/edit" for ::1 at 2019-08-27 12:26:57 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (18.6ms)
+  Rendered groups/edit.html.haml within layouts/application (22.4ms)
+  Rendered layouts/_notifications.html.haml (1.7ms)
+Completed 200 OK in 75ms (Views: 50.8ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-27 12:26:59 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (id not in (4) AND name LIKE('%t%'))[0m
+  Rendered users/search.json.jbuilder (1.2ms)
+Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 0.6ms)
+
+
