@@ -1,23 +1,47 @@
 $(function(){
   function buildHTML(message){
     var content = message.content ? `${ message.content }` : "";
-    var img = message.image ? `<img src= ${ message.image }>` : "";
-    var html = `<div class="contents__chat__messages__message" data-id="${message.id}">
+    var image = message.image ? `<img src= ${ message.image }>` : "";
+    var html = `<div class="contents__chat__messages__message" data-message-id="${message.id}">
                   <div class="contents__chat__messages__message__upper">
                     <p class="contents__chat__messages__message__upper-user">
                       ${message.user_name}
                     </p>
                     <p class="contents__chat__messages__message__upper-date">
-                      ${message.date}
+                      ${message.created_at}
                     </p>
                   </div>
                   <p class="contents__chat__messages__message-text">
                     ${content}
-                    ${img}
+                    ${image}
                   </p>
                 </div>`
   return html;
-  }
+
+  };
+
+  var reloadMessages = function() {
+    last_message_id = $('.contents__chat__messages__message:last').data("message-id");
+    $.ajax({
+      url: "api/messages", 
+      type: 'get',
+      dataType: 'json',
+      data: {last_id: last_message_id}
+    })
+    .done(function(messages) {
+      var insertHTML = '';
+      messages.forEach(function (message) {
+        insertHTML = buildHTML(message);
+        $('.contents__chat__messages').append(insertHTML);
+      })
+      scrollBottom();
+    })
+    .fail(function() {
+      alert('エラーが発生したため自動更新に失敗しました');
+    });
+  };
+  setInterval(reloadMessages, 5000);
+
   function scrollBottom(){
     var target = $('.contents__chat__messages__message').last();
     var position = target.offset().top + $('.contents__chat__messages').scrollTop();
@@ -50,4 +74,5 @@ $(function(){
       $('.contents__chat__bottom__form-box-submit').prop('disabled', false);
     })
   })
+
 });
