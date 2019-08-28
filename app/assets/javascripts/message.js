@@ -21,6 +21,8 @@ $(function(){
   };
 
   var reloadMessages = function() {
+    // 現在のURLを取得してmatch関数で一致していれば、reloadMessages関数を動かす。
+    if (window.location.href.match(/\/groups\/\d+\/messages/)) {
     last_message_id = $('.contents__chat__messages__message:last').data("message-id");
     $.ajax({
       url: "api/messages", 
@@ -40,6 +42,7 @@ $(function(){
       alert('エラーが発生したため自動更新に失敗しました');
     });
   };
+}
   setInterval(reloadMessages, 5000);
 
   function scrollBottom(){

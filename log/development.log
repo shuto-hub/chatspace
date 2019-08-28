@@ -36872,3 +36872,4 @@ Processing by Api::MessagesController#index as JSON
 Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.7ms)
 
 
+DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/shuto/projects/chatspace/config/initializers/carrierwave.rb:7)
