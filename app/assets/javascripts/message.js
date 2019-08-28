@@ -22,7 +22,9 @@ $(function(){
 
   var reloadMessages = function() {
     // 現在のURLを取得してmatch関数で一致していれば、reloadMessages関数を動かす。
-    if (window.location.href.match(/\/groups\/\d+\/messages/)) {
+    
+    if(document.URL.match(/messages/)) {
+      console.log("test")
     last_message_id = $('.contents__chat__messages__message:last').data("message-id");
     $.ajax({
       url: "api/messages", 

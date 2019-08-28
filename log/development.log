@@ -36873,3 +36873,991 @@ Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.7ms)
 
 
 DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/shuto/projects/chatspace/config/initializers/carrierwave.rb:7)
+DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/shuto/projects/chatspace/config/initializers/carrierwave.rb:7)
+Started GET "/" for ::1 at 2019-08-28 16:38:34 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (3.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-08-28 16:38:36 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.2ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (20.5ms)
+  Rendered layouts/_notifications.html.haml (2.4ms)
+Completed 200 OK in 418ms (Views: 394.0ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-08-28 16:39:23 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.1ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml__2571535778707425814_70321691587500 at /Users/shuto/projects/chatspace/app/views/devise/registrations/new.html.haml:9)
+  Rendered devise/registrations/new.html.haml within layouts/application (13.5ms)
+  Rendered layouts/_notifications.html.haml (1.4ms)
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-08-28 16:39:26 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.7ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (13.3ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 49ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-08-28 16:40:05 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (1.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (7.9ms)
+  Rendered layouts/_notifications.html.haml (1.8ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-08-28 16:40:06 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.8ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (11.0ms)
+  Rendered layouts/_notifications.html.haml (1.8ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-08-28 16:40:08 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (1.9ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml__2571535778707425814_70321753153800 at /Users/shuto/projects/chatspace/app/views/devise/registrations/new.html.haml:9)
+  Rendered devise/registrations/new.html.haml within layouts/application (11.4ms)
+  Rendered layouts/_notifications.html.haml (1.3ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-08-28 16:40:19 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (1.4ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml__2571535778707425814_70321753561900 at /Users/shuto/projects/chatspace/app/views/devise/registrations/new.html.haml:9)
+  Rendered devise/registrations/new.html.haml within layouts/application (8.3ms)
+  Rendered layouts/_notifications.html.haml (2.3ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-08-28 16:40:20 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (1.7ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (12.8ms)
+  Rendered layouts/_notifications.html.haml (1.3ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-08-28 16:40:22 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.0ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (8.6ms)
+  Rendered layouts/_notifications.html.haml (1.6ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/shuto/projects/chatspace/config/initializers/carrierwave.rb:7)
+Started GET "/users/sign_up" for ::1 at 2019-08-28 16:43:12 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (6.8ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml__3310055613122206857_70306322014680 at /Users/shuto/projects/chatspace/app/views/devise/registrations/new.html.haml:9)
+  Rendered devise/registrations/new.html.haml within layouts/application (1223.9ms)
+  Rendered layouts/_notifications.html.haml (2.1ms)
+Completed 200 OK in 1501ms (Views: 1473.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-08-28 16:43:19 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.0ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (15.8ms)
+  Rendered layouts/_notifications.html.haml (1.4ms)
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-08-28 16:43:25 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"24b8apf+8uvubYAZGopYGpN6T54ct/TWBl8o26rSpDx1473TqakcOz58V75uWHjZT/n0iQAa1qzwLA/sJ4pEEw==", "user"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'a@a.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 140ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-28 16:43:25 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 2[0m
+  Rendered messages/_side_bar.html.haml (48.4ms)
+  Rendered groups/index.html.haml within layouts/application (51.6ms)
+  Rendered layouts/_notifications.html.haml (1.9ms)
+Completed 200 OK in 78ms (Views: 67.1ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/groups/new" for ::1 at 2019-08-28 16:43:29 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (11.3ms)
+  Rendered groups/new.html.haml within layouts/application (14.6ms)
+  Rendered layouts/_notifications.html.haml (2.4ms)
+Completed 200 OK in 72ms (Views: 50.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-28 16:43:35 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (id not in (2) AND name LIKE('%t%'))[0m
+  Rendered users/search.json.jbuilder (4.4ms)
+Completed 200 OK in 19ms (Views: 12.4ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/groups" for ::1 at 2019-08-28 16:43:38 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CylBtvC62O8dZdwUVS84CEe5MBOHp7YfSK8rd+RVuCfT93C8qclX/bdgYRwcgk67OtpF/R3VIi4rcbKj64JYxA==", "group"=>{"name"=>"ff", "user_ids"=>["2", "5"]}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (2, 5)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGroup Exists (3.0ms)[0m  [1m[34mSELECT  1 AS one FROM `groups` WHERE `groups`.`name` = BINARY 'ff' LIMIT 1[0m
+  [1m[35mSQL (4.4ms)[0m  [1m[32mINSERT INTO `groups` (`name`, `created_at`, `updated_at`) VALUES ('ff', '2019-08-28 07:43:38', '2019-08-28 07:43:38')[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (19, 2, '2019-08-28 07:43:38', '2019-08-28 07:43:38')[0m
+  [1m[35mSQL (16.8ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (19, 5, '2019-08-28 07:43:38', '2019-08-28 07:43:38')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 45ms (ActiveRecord: 27.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-28 16:43:38 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 2[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 19 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (26.2ms)
+  Rendered groups/index.html.haml within layouts/application (29.1ms)
+  Rendered layouts/_notifications.html.haml (1.7ms)
+Completed 200 OK in 52ms (Views: 47.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/groups/19/messages" for ::1 at 2019-08-28 16:43:40 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"19"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 19 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 2[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 19 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (8.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 19[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 19[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered messages/index.html.haml within layouts/application (18.6ms)
+  Rendered layouts/_notifications.html.haml (1.4ms)
+Completed 200 OK in 51ms (Views: 39.7ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/groups/19/messages" for ::1 at 2019-08-28 16:43:42 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nne8m0gugiclKyaREyO8NWEQ2fEaxESWhxfZwW5OVf19WtuR7GshcTgQwGyYrHv6Z0HiueeWeRYdiUSy4VI/iQ==", "message"=>{"content"=>"s"}, "commit"=>"Send", "group_id"=>"19"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 19 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('s', 19, 2, '2019-08-28 07:43:43', '2019-08-28 07:43:43')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups/19/messages
+Completed 302 Found in 13ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/groups/19/messages" for ::1 at 2019-08-28 16:43:43 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"19"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 19 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 2[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 19 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (6.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 19[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 19[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+  Rendered collection of messages/_message.html.haml [1 times] (4.8ms)
+  Rendered messages/index.html.haml within layouts/application (31.9ms)
+  Rendered layouts/_notifications.html.haml (1.8ms)
+Completed 200 OK in 60ms (Views: 53.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/groups/19/api/messages?last_id=209" for ::1 at 2019-08-28 16:43:48 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"209", "group_id"=>"19"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 19 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 19 AND (id > '209')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/user/edit.2" for ::1 at 2019-08-28 16:43:49 +0900
+Processing by UsersController#edit as 
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (4.9ms)
+  Rendered layouts/_notifications.html.haml (1.4ms)
+Completed 200 OK in 62ms (Views: 46.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-08-28 16:43:52 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NvuNSjjYjy8CpInpbzjE/OCZpio8S0ra5pI5LNeQrBHuJbxAYasAPaihNOEmlbJPnfrTxKY53uuFTKD42EdM8g=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-08-28 16:43:52 +0900
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-08-28 16:43:52 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (1.7ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (7.8ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-08-28 16:47:10 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.2ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml__3310055613122206857_70306396555460 at /Users/shuto/projects/chatspace/app/views/devise/registrations/new.html.haml:9)
+  Rendered devise/registrations/new.html.haml within layouts/application (9.9ms)
+  Rendered layouts/_notifications.html.haml (2.4ms)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-08-28 16:51:50 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.7ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml__3310055613122206857_70306343633000 at /Users/shuto/projects/chatspace/app/views/devise/registrations/new.html.haml:9)
+  Rendered devise/registrations/new.html.haml within layouts/application (44.3ms)
+  Rendered layouts/_notifications.html.haml (1.9ms)
+Completed 200 OK in 101ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-08-28 16:56:43 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yV3ZMyeIe52dACVhYMwK4UQlPtV9zK2rlsniP5beE1hrsZ3QQD4NoCZmuFT8bycSbz8Nz4zb+LOujG6B6q/dMg==", "user"=>{"name"=>"test", "email"=>"a@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.8ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml__3310055613122206857_70306396114460 at /Users/shuto/projects/chatspace/app/views/devise/registrations/new.html.haml:9)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/devise-4.7.0/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (23.5ms)
+  Rendered layouts/_notifications.html.haml (2.8ms)
+Completed 200 OK in 228ms (Views: 90.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/users" for ::1 at 2019-08-28 16:56:57 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3H0BsTZZ9rdfNwi6+O/1FaiSdqJo8pNffMp01aqir21+kUVSUe+AiuRRlY9kTNjmg4hFuJnlxkdEj/hr1tNhBw==", "user"=>{"name"=>"test", "email"=>"a@a.comkjj", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'a@a.comkjj' LIMIT 1[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('test', 'a@a.comkjj', '$2a$11$8T1YpfIcvIBHtnx9SdEFqe/ZNtIlRM8n9C2eO7IkFnBUXHRVabRYm', '2019-08-28 07:56:57', '2019-08-28 07:56:57')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 131ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-28 16:56:57 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 7[0m
+  Rendered messages/_side_bar.html.haml (8.0ms)
+  Rendered groups/index.html.haml within layouts/application (11.6ms)
+  Rendered layouts/_notifications.html.haml (1.6ms)
+Completed 200 OK in 42ms (Views: 37.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/new" for ::1 at 2019-08-28 16:56:59 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (10.9ms)
+  Rendered groups/new.html.haml within layouts/application (14.9ms)
+  Rendered layouts/_notifications.html.haml (1.8ms)
+Completed 200 OK in 49ms (Views: 42.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/groups/new" for ::1 at 2019-08-28 16:57:11 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (13.1ms)
+  Rendered groups/new.html.haml within layouts/application (16.5ms)
+  Rendered layouts/_notifications.html.haml (2.0ms)
+Completed 200 OK in 54ms (Views: 45.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/groups" for ::1 at 2019-08-28 16:57:14 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DPETC3dk1PufaccNA0J/Qop5ADGSxA/jd5s89WE9aFCuHVfoENKixiQPWjif4VKxoWMzK2PTWvtP3rBLHUymOg==", "group"=>{"name"=>"test-group", "user_ids"=>["7"]}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGroup Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `groups` WHERE `groups`.`name` = BINARY 'test-group' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (11.8ms)
+  Rendered groups/new.html.haml within layouts/application (15.3ms)
+  Rendered layouts/_notifications.html.haml (2.5ms)
+Completed 200 OK in 59ms (Views: 45.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/groups" for ::1 at 2019-08-28 16:57:18 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V5diqaaOCFuyKLhlImGCcNKeMnMyaeSKoCtO9cm5Frb1eyZKwTh+ZglOJVC+wq+D+YQBacN+sZKYbsJLtcjY3A==", "group"=>{"name"=>"gtest-group", "user_ids"=>["7"]}, "commit"=>"登録する"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGroup Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `groups` WHERE `groups`.`name` = BINARY 'gtest-group' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `groups` (`name`, `created_at`, `updated_at`) VALUES ('gtest-group', '2019-08-28 07:57:18', '2019-08-28 07:57:18')[0m
+  [1m[35mSQL (6.1ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (20, 7, '2019-08-28 07:57:18', '2019-08-28 07:57:18')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 24ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-28 16:57:18 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 7[0m
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (9.2ms)
+  Rendered groups/index.html.haml within layouts/application (12.8ms)
+  Rendered layouts/_notifications.html.haml (2.4ms)
+Completed 200 OK in 46ms (Views: 41.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/groups/20/messages" for ::1 at 2019-08-28 16:57:20 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"20"}
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (2.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 7[0m
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (8.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 20[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered messages/index.html.haml within layouts/application (18.7ms)
+  Rendered layouts/_notifications.html.haml (2.0ms)
+Completed 200 OK in 66ms (Views: 46.9ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/groups/20/messages" for ::1 at 2019-08-28 16:57:22 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a4PavgaFNzgPHC/CxwUeYlxY0KCOBEWYxO9ZL3ksUTah6ncZyyVFyhqpR0MUhVcOStd2aeygjQJDdbc7MR4H2g==", "message"=>{"content"=>"jj"}, "commit"=>"Send", "group_id"=>"20"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('jj', 20, 7, '2019-08-28 07:57:22', '2019-08-28 07:57:22')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups/20/messages
+Completed 302 Found in 15ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/groups/20/messages" for ::1 at 2019-08-28 16:57:22 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 7[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (8.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 20[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7[0m
+  Rendered collection of messages/_message.html.haml [1 times] (5.0ms)
+  Rendered messages/index.html.haml within layouts/application (27.2ms)
+  Rendered layouts/_notifications.html.haml (2.4ms)
+Completed 200 OK in 64ms (Views: 57.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/groups/new" for ::1 at 2019-08-28 16:57:25 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (11.8ms)
+  Rendered groups/new.html.haml within layouts/application (14.8ms)
+  Rendered layouts/_notifications.html.haml (3.2ms)
+Completed 200 OK in 56ms (Views: 49.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/groups/new" for ::1 at 2019-08-28 16:57:50 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (22.7ms)
+  Rendered groups/new.html.haml within layouts/application (27.3ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 301ms (Views: 293.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/groups/20/messages" for ::1 at 2019-08-28 16:57:55 +0900
+Processing by MessagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PMmJLZ/0/bIdZMnSfG3DeTrzdVC3DRKZ1dX7xCyPa0KeJc3O+EKLj6YCVOfgzu6KEelGSkYaR4HtkHd6UP6lKA==", "message"=>{"content"=>"fdsf"}, "group_id"=>"20"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('fdsf', 20, 7, '2019-08-28 07:57:55', '2019-08-28 07:57:55')[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering messages/create.json.jbuilder
+  Rendered messages/create.json.jbuilder (0.9ms)
+Completed 200 OK in 26ms (Views: 13.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/groups/20/api/messages?last_id=211" for ::1 at 2019-08-28 16:57:57 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"211", "group_id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 AND (id > '211')[0m
+  Rendered api/messages/index.json.jbuilder (3.2ms)
+Completed 200 OK in 18ms (Views: 12.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups/20/api/messages?last_id=211" for ::1 at 2019-08-28 16:58:02 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"211", "group_id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 AND (id > '211')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/20/api/messages?last_id=211" for ::1 at 2019-08-28 16:58:07 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"211", "group_id"=>"20"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 AND (id > '211')[0m
+  Rendered api/messages/index.json.jbuilder (1.7ms)
+Completed 200 OK in 24ms (Views: 16.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/groups/20/api/messages?last_id=211" for ::1 at 2019-08-28 16:58:12 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"211", "group_id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 AND (id > '211')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/20/api/messages?last_id=211" for ::1 at 2019-08-28 16:58:17 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"211", "group_id"=>"20"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 AND (id > '211')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 16ms (Views: 9.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/groups/20/api/messages?last_id=211" for ::1 at 2019-08-28 16:58:22 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"211", "group_id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 AND (id > '211')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/groups/new" for ::1 at 2019-08-28 16:58:23 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (9.4ms)
+  Rendered groups/new.html.haml within layouts/application (12.7ms)
+  Rendered layouts/_notifications.html.haml (1.8ms)
+Completed 200 OK in 50ms (Views: 43.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/search?keyword=%E3%81%82" for ::1 at 2019-08-28 16:58:25 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"あ"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (id not in (7) AND name LIKE('%あ%'))[0m
+  Rendered users/search.json.jbuilder (2.7ms)
+Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/groups/20/messages" for ::1 at 2019-08-28 16:58:27 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 7[0m
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (9.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 20[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7[0m
+  Rendered collection of messages/_message.html.haml [2 times] (2.8ms)
+  Rendered messages/index.html.haml within layouts/application (23.2ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 55ms (Views: 45.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/groups/20/messages" for ::1 at 2019-08-28 16:58:28 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"20"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 7[0m
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (8.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 20[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7[0m
+  Rendered collection of messages/_message.html.haml [2 times] (3.1ms)
+  Rendered messages/index.html.haml within layouts/application (22.3ms)
+  Rendered layouts/_notifications.html.haml (1.3ms)
+Completed 200 OK in 52ms (Views: 45.7ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/groups/20/messages" for ::1 at 2019-08-28 16:58:32 +0900
+Processing by MessagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dQ4wly1v7QCQIbxWtV7+Qbnj0zaAls0Yp1TSH0/m68LX4nR0StmbPStHIWMp/dOykvngLHGBmACfEV6hM5clqA==", "message"=>{"content"=>"a"}, "group_id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('a', 20, 7, '2019-08-28 07:58:32', '2019-08-28 07:58:32')[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  Rendering messages/create.json.jbuilder
+  Rendered messages/create.json.jbuilder (0.5ms)
+Completed 200 OK in 27ms (Views: 12.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/groups/20/api/messages?last_id=212" for ::1 at 2019-08-28 16:58:33 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"212", "group_id"=>"20"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 AND (id > '212')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 16ms (Views: 9.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/groups/20/api/messages?last_id=212" for ::1 at 2019-08-28 16:58:38 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"212", "group_id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 AND (id > '212')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/new" for ::1 at 2019-08-28 16:58:43 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (7.9ms)
+  Rendered groups/new.html.haml within layouts/application (11.6ms)
+  Rendered layouts/_notifications.html.haml (2.1ms)
+Completed 200 OK in 45ms (Views: 38.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/groups/new" for ::1 at 2019-08-28 16:59:13 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (8.9ms)
+  Rendered groups/new.html.haml within layouts/application (13.5ms)
+  Rendered layouts/_notifications.html.haml (1.6ms)
+Completed 200 OK in 102ms (Views: 96.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/groups/20/messages" for ::1 at 2019-08-28 16:59:14 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 7[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (7.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 20[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7[0m
+  Rendered collection of messages/_message.html.haml [3 times] (3.5ms)
+  Rendered messages/index.html.haml within layouts/application (23.9ms)
+  Rendered layouts/_notifications.html.haml (2.5ms)
+Completed 200 OK in 56ms (Views: 48.7ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/groups/20/messages" for ::1 at 2019-08-28 16:59:17 +0900
+Processing by MessagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X+6CoGRtHzidu265hVCUrS6sIII0wD4rgCDMTvwsQvH9AsZDA9tpBSbd84wZ87leBbYTmMXXazO4ZUDwgF2Mmw==", "message"=>{"content"=>"fasdfdsfsdf"}, "group_id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('fasdfdsfsdf', 20, 7, '2019-08-28 07:59:17', '2019-08-28 07:59:17')[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  Rendering messages/create.json.jbuilder
+  Rendered messages/create.json.jbuilder (0.6ms)
+Completed 200 OK in 28ms (Views: 10.1ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/groups/20/api/messages?last_id=213" for ::1 at 2019-08-28 16:59:19 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"213", "group_id"=>"20"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 AND (id > '213')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 18ms (Views: 11.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/groups/20/api/messages?last_id=213" for ::1 at 2019-08-28 16:59:24 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"213", "group_id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 AND (id > '213')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 14ms (Views: 9.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/new" for ::1 at 2019-08-28 16:59:26 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (9.8ms)
+  Rendered groups/new.html.haml within layouts/application (12.6ms)
+  Rendered layouts/_notifications.html.haml (1.6ms)
+Completed 200 OK in 52ms (Views: 46.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/search?keyword=%E3%81%82" for ::1 at 2019-08-28 16:59:44 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"あ"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (id not in (7) AND name LIKE('%あ%'))[0m
+  Rendered users/search.json.jbuilder (1.5ms)
+Completed 200 OK in 17ms (Views: 10.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/groups" for ::1 at 2019-08-28 16:59:47 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GV9hl1P6TLK+brf8njijwB3NFkGmm50vGv9rpBBQ20W7syV0NEw6jwUIKskCm44zNtclW1eMyDciuucabCEVLw==", "group"=>{"name"=>"", "user_ids"=>["7", "3"]}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (7, 3)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGroup Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `groups` WHERE `groups`.`name` = BINARY '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (12.2ms)
+  Rendered groups/new.html.haml within layouts/application (17.7ms)
+  Rendered layouts/_notifications.html.haml (1.8ms)
+Completed 200 OK in 70ms (Views: 56.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/groups" for ::1 at 2019-08-28 16:59:50 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/groups"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [40 times] (22.9ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.4ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (144.5ms)
+Started GET "/" for ::1 at 2019-08-28 16:59:59 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 7[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (7.0ms)
+  Rendered groups/index.html.haml within layouts/application (14.8ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 55ms (Views: 47.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/groups/20/messages" for ::1 at 2019-08-28 17:00:00 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"20"}
+  [1m[36mUser Load (11.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 7[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (7.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 20[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7[0m
+  Rendered collection of messages/_message.html.haml [4 times] (3.0ms)
+  Rendered messages/index.html.haml within layouts/application (22.8ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 63ms (Views: 43.4ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/user/edit.7" for ::1 at 2019-08-28 17:00:03 +0900
+Processing by UsersController#edit as 
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (5.9ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 64ms (Views: 47.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/user/edit.7" for ::1 at 2019-08-28 17:13:27 +0900
+Processing by UsersController#edit as 
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (23.0ms)
+  Rendered layouts/_notifications.html.haml (2.6ms)
+Completed 200 OK in 248ms (Views: 212.9ms | ActiveRecord: 2.2ms)
+
+
+Started PATCH "/user.7" for ::1 at 2019-08-28 17:13:36 +0900
+Processing by UsersController#update as 
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vhEtcSAYlri+SOd0eUf2PHXfISi9b7HQOfaEzSNetooc/WmSR67ghQUuekHl5NvPXsUSMkx45MgBswhzXy944A==", "user"=>{"name"=>"test", "email"=>"a@a.comkjj"}, "commit"=>"Update"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-28 17:13:36 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 7[0m
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (14.2ms)
+  Rendered groups/index.html.haml within layouts/application (18.0ms)
+  Rendered layouts/_notifications.html.haml (2.4ms)
+Completed 200 OK in 57ms (Views: 48.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/groups/20/messages" for ::1 at 2019-08-28 17:13:37 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"20"}
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.9ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 7[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (10.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 20[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7[0m
+  Rendered collection of messages/_message.html.haml [4 times] (5.2ms)
+  Rendered messages/index.html.haml within layouts/application (33.7ms)
+  Rendered layouts/_notifications.html.haml (2.2ms)
+Completed 200 OK in 80ms (Views: 64.6ms | ActiveRecord: 9.0ms)
+
+
+Started POST "/groups/20/messages" for ::1 at 2019-08-28 17:13:40 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i6ZzMdAHlO2TwqQXZ9PzG6l1aCV84GaxiR/UZgJTEQVBz96WHafmH4Z3zJa0U7p3v/rO7B5ErisOhTpySmFH6Q==", "message"=>{"content"=>"a"}, "commit"=>"Send", "group_id"=>"20"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('a', 20, 7, '2019-08-28 08:13:40', '2019-08-28 08:13:40')[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups/20/messages
+Completed 302 Found in 22ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/groups/20/messages" for ::1 at 2019-08-28 17:13:40 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 7[0m
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (9.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 20[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7[0m
+  Rendered collection of messages/_message.html.haml [5 times] (6.5ms)
+  Rendered messages/index.html.haml within layouts/application (29.3ms)
+  Rendered layouts/_notifications.html.haml (3.5ms)
+Completed 200 OK in 72ms (Views: 64.7ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/groups/20/messages" for ::1 at 2019-08-28 17:13:42 +0900
+Processing by MessagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tITWp+m7hly8BHNGMJ0xXTEnc1G1M63BVw3c6QRUrLMWaJJEjg3wYQdi7nOsPhyuGj1AS0Qk+NlvSFBXeCVi2Q==", "message"=>{"content"=>""}, "group_id"=>"20"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 7[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (12.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 20[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7[0m
+  Rendered collection of messages/_message.html.haml [5 times] (21.2ms)
+  Rendered messages/index.html.haml within layouts/application (71.8ms)
+  Rendered layouts/_notifications.html.haml (1.7ms)
+Completed 200 OK in 125ms (Views: 114.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/groups/20/api/messages?last_id=214" for ::1 at 2019-08-28 17:13:45 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"214", "group_id"=>"20"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 AND (id > '214')[0m
+  Rendered api/messages/index.json.jbuilder (1.3ms)
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/groups/20/messages" for ::1 at 2019-08-28 17:13:46 +0900
+Processing by MessagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tITWp+m7hly8BHNGMJ0xXTEnc1G1M63BVw3c6QRUrLMWaJJEjg3wYQdi7nOsPhyuGj1AS0Qk+NlvSFBXeCVi2Q==", "message"=>{"content"=>"a"}, "group_id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('a', 20, 7, '2019-08-28 08:13:46', '2019-08-28 08:13:46')[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  Rendering messages/create.json.jbuilder
+  Rendered messages/create.json.jbuilder (0.6ms)
+Completed 200 OK in 20ms (Views: 9.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/groups/20/api/messages?last_id=215" for ::1 at 2019-08-28 17:13:50 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"215", "group_id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 20 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 20 AND (id > '215')[0m
+  Rendered api/messages/index.json.jbuilder (1.3ms)
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/user/edit.7" for ::1 at 2019-08-28 17:13:52 +0900
+Processing by UsersController#edit as 
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (7.9ms)
+  Rendered layouts/_notifications.html.haml (2.6ms)
+Completed 200 OK in 71ms (Views: 54.9ms | ActiveRecord: 0.5ms)
+
+
