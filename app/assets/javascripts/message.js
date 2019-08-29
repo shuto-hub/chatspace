@@ -37,8 +37,8 @@ $(function(){
       messages.forEach(function (message) {
         insertHTML = buildHTML(message);
         $('.contents__chat__messages').append(insertHTML);
+        scrollBottom();
       })
-      scrollBottom();
     })
     .fail(function() {
       alert('エラーが発生したため自動更新に失敗しました');

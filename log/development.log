@@ -41015,3 +41015,2077 @@ Processing by Api::MessagesController#index as JSON
 Completed 200 OK in 17ms (Views: 10.5ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/groups/15/api/messages?last_id=208" for ::1 at 2019-08-28 19:11:07 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"208", "group_id"=>"15"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 AND (id > '208')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 9.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/15/api/messages?last_id=208" for ::1 at 2019-08-28 19:11:12 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"208", "group_id"=>"15"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 AND (id > '208')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 9.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/groups/15/api/messages?last_id=208" for ::1 at 2019-08-28 19:11:17 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"208", "group_id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 AND (id > '208')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/15/api/messages?last_id=208" for ::1 at 2019-08-28 19:11:22 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"208", "group_id"=>"15"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 AND (id > '208')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 16ms (Views: 9.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/groups/15/edit" for ::1 at 2019-08-28 19:11:22 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (8.7ms)
+  Rendered groups/edit.html.haml within layouts/application (11.9ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/groups/15" for ::1 at 2019-08-28 19:11:26 +0900
+Processing by GroupsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mzep4sHPYciQmJ2Pctw2VBmuelSEUJDf77T+HV0afZtQ/e5RthwGF2bifPfkDrSdy79Ac0gaF1HgXe+4Xe39Rg==", "group"=>{"name"=>"test-groups", "user_ids"=>["4", "5", "6", "3"]}, "commit"=>"更新する", "id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (4, 5, 6, 3)[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  [1m[36mGroup Exists (1.7ms)[0m  [1m[34mSELECT  1 AS one FROM `groups` WHERE `groups`.`name` = BINARY 'test-groups' AND (`groups`.`id` != 15) LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups/15/messages
+Completed 302 Found in 17ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/groups/15/messages" for ::1 at 2019-08-28 19:11:26 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (6.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4[0m
+  Rendered collection of messages/_message.html.haml [64 times] (8.3ms)
+  Rendered messages/index.html.haml within layouts/application (28.0ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 55ms (Views: 49.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/groups/15/edit" for ::1 at 2019-08-28 19:11:29 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (9.5ms)
+  Rendered groups/edit.html.haml within layouts/application (12.8ms)
+  Rendered layouts/_notifications.html.haml (1.4ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/15/edit" for ::1 at 2019-08-28 19:14:11 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  Rendered groups/_form.html.haml (10.0ms)
+  Rendered groups/edit.html.haml within layouts/application (13.2ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 43ms (Views: 38.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/15/edit" for ::1 at 2019-08-28 19:14:52 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  Rendered groups/_form.html.haml (10.6ms)
+  Rendered groups/edit.html.haml within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/Users/shuto/projects/chatspace/app/views/groups/_form.html.haml:11: syntax error, unexpected ':', expecting '}'
+...s.html_escape((( f.label {name: 'グループ名', class: 'c...
+...                              ^
+/Users/shuto/projects/chatspace/app/views/groups/_form.html.haml:11: syntax error, unexpected ',', expecting ')'
+...label {name: 'グループ名', class: 'chat-group-form__lab...
+...                              ^
+/Users/shuto/projects/chatspace/app/views/groups/_form.html.haml:11: syntax error, unexpected '}', expecting ')'
+...lass: 'chat-group-form__label'}
+...                              ^
+/Users/shuto/projects/chatspace/app/views/groups/_form.html.haml:42: syntax error, unexpected keyword_end, expecting ')'
+...</div>\n</div>\n".freeze);; end;; _hamlout.buffer << ((::Ham...
+...                            ^~~
+/Users/shuto/projects/chatspace/app/views/groups/_form.html.haml:42: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/Users/shuto/projects/chatspace/app/views/groups/_form.html.haml:42: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/Users/shuto/projects/chatspace/app/views/groups/_form.html.haml:45: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/groups/_form.html.haml:11: syntax error, unexpected ':', expecting '}'
+app/views/groups/_form.html.haml:11: syntax error, unexpected ',', expecting ')'
+app/views/groups/_form.html.haml:11: syntax error, unexpected '}', expecting ')'
+app/views/groups/_form.html.haml:42: syntax error, unexpected keyword_end, expecting ')'
+app/views/groups/_form.html.haml:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/groups/_form.html.haml:42: syntax error, unexpected keyword_end, expecting ')'
+app/views/groups/_form.html.haml:45: syntax error, unexpected keyword_end, expecting ')'
+app/views/groups/edit.html.haml:3:in `_app_views_groups_edit_html_haml__713418640841496963_70093085773800'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.4ms)
+Started GET "/groups/15/edit" for ::1 at 2019-08-28 19:15:05 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering groups/edit.html.haml within layouts/application
+  Rendered groups/_form.html.haml (7.7ms)
+  Rendered groups/edit.html.haml within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/shuto/projects/chatspace/app/views/groups/_form.html.haml:11: syntax error, unexpected ':', expecting '}'
+...rs.html_escape((( f.label{name: 'グループ名', class: 'c...
+...                              ^
+/Users/shuto/projects/chatspace/app/views/groups/_form.html.haml:11: syntax error, unexpected ',', expecting ')'
+....label{name: 'グループ名', class: 'chat-group-form__lab...
+...                              ^
+/Users/shuto/projects/chatspace/app/views/groups/_form.html.haml:11: syntax error, unexpected '}', expecting ')'
+...lass: 'chat-group-form__label'}
+...                              ^
+/Users/shuto/projects/chatspace/app/views/groups/_form.html.haml:42: syntax error, unexpected keyword_end, expecting ')'
+...</div>\n</div>\n".freeze);; end;; _hamlout.buffer << ((::Ham...
+...                            ^~~
+/Users/shuto/projects/chatspace/app/views/groups/_form.html.haml:42: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/Users/shuto/projects/chatspace/app/views/groups/_form.html.haml:42: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/Users/shuto/projects/chatspace/app/views/groups/_form.html.haml:45: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/groups/_form.html.haml:11: syntax error, unexpected ':', expecting '}'
+app/views/groups/_form.html.haml:11: syntax error, unexpected ',', expecting ')'
+app/views/groups/_form.html.haml:11: syntax error, unexpected '}', expecting ')'
+app/views/groups/_form.html.haml:42: syntax error, unexpected keyword_end, expecting ')'
+app/views/groups/_form.html.haml:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/groups/_form.html.haml:42: syntax error, unexpected keyword_end, expecting ')'
+app/views/groups/_form.html.haml:45: syntax error, unexpected keyword_end, expecting ')'
+app/views/groups/edit.html.haml:3:in `_app_views_groups_edit_html_haml__713418640841496963_70093106802500'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.7ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.5ms)
+DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/shuto/projects/chatspace/config/initializers/carrierwave.rb:7)
+Started GET "/groups/15" for ::1 at 2019-08-29 10:15:38 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (11.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  
+ActionController::RoutingError (No route matches [GET] "/groups/15"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered collection of /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [40 times] (35.4ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.8ms)
+  Rendering /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.7ms)
+  Rendered /Users/shuto/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (177.9ms)
+Started GET "/" for ::1 at 2019-08-29 10:15:45 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (12.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (114.9ms)
+  Rendered groups/index.html.haml within layouts/application (121.8ms)
+  Rendered layouts/_notifications.html.haml (2.2ms)
+Completed 200 OK in 517ms (Views: 459.0ms | ActiveRecord: 34.3ms)
+
+
+Started GET "/groups/15/messages" for ::1 at 2019-08-29 10:15:47 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (6.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 15[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4[0m
+  Rendered collection of messages/_message.html.haml [64 times] (7.9ms)
+  Rendered messages/index.html.haml within layouts/application (40.0ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 64ms (Views: 57.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/groups/15/api/messages?last_id=208" for ::1 at 2019-08-29 10:15:51 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"208", "group_id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 15 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (1.1ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 AND (id > '208')[0m
+  Rendered api/messages/index.json.jbuilder (2.3ms)
+Completed 200 OK in 19ms (Views: 13.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/groups/new" for ::1 at 2019-08-29 10:15:52 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (1009.8ms)
+  Rendered groups/new.html.haml within layouts/application (1012.8ms)
+  Rendered layouts/_notifications.html.haml (1.4ms)
+Completed 200 OK in 1046ms (Views: 1034.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/search?keyword=%E3%81%82" for ::1 at 2019-08-29 10:15:58 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"あ"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (id not in (4) AND name LIKE('%あ%'))[0m
+  Rendered users/search.json.jbuilder (2.7ms)
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/groups" for ::1 at 2019-08-29 10:16:01 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D5Op7yri5JOS+XOMI2aiHOAYUX6itgnx+nBAqvUAYPtsWe5cXTGDTGSDkvS1tCDVMglrWW78jn/1mVEP9ffgJg==", "group"=>{"name"=>"aaaa", "user_ids"=>["4", "3"]}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (4, 3)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGroup Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `groups` WHERE `groups`.`name` = BINARY 'aaaa' LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (8.1ms)
+  Rendered groups/new.html.haml within layouts/application (12.7ms)
+  Rendered layouts/_notifications.html.haml (1.4ms)
+Completed 200 OK in 49ms (Views: 38.0ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/groups" for ::1 at 2019-08-29 10:16:05 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wZoliOLcWOdk8p2rn+Or0Mi0n4r1mDnhan8x2nHDg6GiUGI7lQ8/OJKIfNMJMSkZGqWlrTnSvm9lliB/cTQDfA==", "group"=>{"name"=>"aaaawew", "user_ids"=>["4", "3"]}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (4, 3)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGroup Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `groups` WHERE `groups`.`name` = BINARY 'aaaawew' LIMIT 1[0m
+  [1m[35mSQL (10.9ms)[0m  [1m[32mINSERT INTO `groups` (`name`, `created_at`, `updated_at`) VALUES ('aaaawew', '2019-08-29 01:16:05', '2019-08-29 01:16:05')[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (21, 4, '2019-08-29 01:16:05', '2019-08-29 01:16:05')[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (21, 3, '2019-08-29 01:16:05', '2019-08-29 01:16:05')[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 45ms (ActiveRecord: 22.8ms)
+
+
+Started GET "/" for ::1 at 2019-08-29 10:16:05 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 21 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (7.9ms)
+  Rendered groups/index.html.haml within layouts/application (10.7ms)
+  Rendered layouts/_notifications.html.haml (1.4ms)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-29 10:16:52 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 21 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (8.2ms)
+  Rendered groups/index.html.haml within layouts/application (10.9ms)
+  Rendered layouts/_notifications.html.haml (2.4ms)
+Completed 200 OK in 328ms (Views: 323.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2019-08-29 10:34:24 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 21 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (8.7ms)
+  Rendered groups/index.html.haml within layouts/application (11.6ms)
+  Rendered layouts/_notifications.html.haml (1.4ms)
+Completed 200 OK in 40ms (Views: 35.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/user/edit.4" for ::1 at 2019-08-29 10:34:25 +0900
+Processing by UsersController#edit as 
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (7.0ms)
+  Rendered layouts/_notifications.html.haml (1.4ms)
+Completed 200 OK in 73ms (Views: 57.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/user.4" for ::1 at 2019-08-29 10:34:28 +0900
+Processing by UsersController#update as 
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLomIjOsGroAPdphJ1NHByIkXSJjW5e2PXgmtXdWpFXbcGGRRH99ZfZHOxmxgcXO8DVnBa8REDgykTcQd6EkiA==", "user"=>{"name"=>"test1", "email"=>"1@1.com"}, "commit"=>"Update"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-29 10:34:28 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 21 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (7.6ms)
+  Rendered groups/index.html.haml within layouts/application (11.9ms)
+  Rendered layouts/_notifications.html.haml (1.3ms)
+Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups/new" for ::1 at 2019-08-29 10:34:29 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (8.7ms)
+  Rendered groups/new.html.haml within layouts/application (11.2ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 36ms (Views: 30.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/groups/new" for ::1 at 2019-08-29 10:34:53 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (7.0ms)
+  Rendered groups/new.html.haml within layouts/application (11.1ms)
+  Rendered layouts/_notifications.html.haml (1.4ms)
+Completed 200 OK in 37ms (Views: 33.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?keyword=t" for ::1 at 2019-08-29 10:38:12 +0900
+Processing by UsersController#search as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/search.json.jbuilder
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (id not in (4) AND name LIKE('%t%'))[0m
+  Rendered users/search.json.jbuilder (1.1ms)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/groups" for ::1 at 2019-08-29 10:38:16 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1SeUxR7mWPRPratT5fTJjAITmCaQbnECixasDsqHEm227dN2aTU/K7nXSitzJktF0AKiAVwk9oyE/72rynCSsA==", "group"=>{"name"=>"ddwed", "user_ids"=>["4", "6", "5"]}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (4, 6, 5)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGroup Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `groups` WHERE `groups`.`name` = BINARY 'ddwed' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `groups` (`name`, `created_at`, `updated_at`) VALUES ('ddwed', '2019-08-29 01:38:16', '2019-08-29 01:38:16')[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (22, 4, '2019-08-29 01:38:16', '2019-08-29 01:38:16')[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (22, 6, '2019-08-29 01:38:16', '2019-08-29 01:38:16')[0m
+  [1m[35mSQL (7.1ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (22, 5, '2019-08-29 01:38:16', '2019-08-29 01:38:16')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (ActiveRecord: 11.8ms)
+
+
+Started GET "/" for ::1 at 2019-08-29 10:38:16 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 21 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (8.5ms)
+  Rendered groups/index.html.haml within layouts/application (11.0ms)
+  Rendered layouts/_notifications.html.haml (1.3ms)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/groups/22/messages" for ::1 at 2019-08-29 10:38:18 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"22"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 21 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (9.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 22[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered messages/index.html.haml within layouts/application (17.1ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 47ms (Views: 39.4ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/groups/22/messages" for ::1 at 2019-08-29 10:38:20 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0EJ1wGwQTmGWbHotoiBFc0TnhBUn6Z/g+D7y82oy3YrlA9vcuYwqAKUO9P1pR1LpqZN0iWqKm6HtoLTqmpcF7Q==", "message"=>{"content"=>"e"}, "commit"=>"Send", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('e', 22, 4, '2019-08-29 01:38:20', '2019-08-29 01:38:20')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/groups/22/messages
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/groups/22/messages" for ::1 at 2019-08-29 10:38:20 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 21 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (7.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 22[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4[0m
+  Rendered collection of messages/_message.html.haml [1 times] (2.6ms)
+  Rendered messages/index.html.haml within layouts/application (20.3ms)
+  Rendered layouts/_notifications.html.haml (1.5ms)
+Completed 200 OK in 47ms (Views: 41.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/groups/22/api/messages?last_id=216" for ::1 at 2019-08-29 10:38:25 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"216", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '216')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=216" for ::1 at 2019-08-29 10:38:30 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"216", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '216')[0m
+  Rendered api/messages/index.json.jbuilder (2.2ms)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/groups/22/messages" for ::1 at 2019-08-29 10:38:31 +0900
+Processing by MessagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"25nFnjxO5UqksSZAEq5Oeo/rNnUY94LaHaL5lOEN/mW4U4ItS52ClVLLxziEfMyzXfoMUtS9BVQSS+gx4fp+uA==", "message"=>{"content"=>"wewe"}, "group_id"=>"22"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('wewe', 22, 4, '2019-08-29 01:38:31', '2019-08-29 01:38:31')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering messages/create.json.jbuilder
+  Rendered messages/create.json.jbuilder (0.5ms)
+Completed 200 OK in 18ms (Views: 8.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:38:37 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:38:42 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:38:46 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:38:52 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.9ms)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:38:57 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:39:02 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:39:07 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:39:12 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 0.7ms)
+
+
+DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/shuto/projects/chatspace/config/initializers/carrierwave.rb:7)
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:39:21 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 93ms (Views: 13.5ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:39:25 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 16ms (Views: 10.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/messages" for ::1 at 2019-08-29 10:39:25 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 21 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (32.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 22[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4[0m
+  Rendered collection of messages/_message.html.haml [2 times] (3.3ms)
+  Rendered messages/index.html.haml within layouts/application (75.8ms)
+  Rendered layouts/_notifications.html.haml (2.2ms)
+Completed 200 OK in 312ms (Views: 295.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:39:31 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (0.9ms)
+Completed 200 OK in 13ms (Views: 8.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:39:36 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 13ms (Views: 8.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:39:41 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 15ms (Views: 9.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:39:46 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:39:51 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:39:56 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:40:01 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.3ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:40:06 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:40:11 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.4ms)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:40:16 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 16ms (Views: 10.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:40:21 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (0.9ms)
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:40:26 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.3ms)
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:40:31 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:40:36 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (0.9ms)
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:40:41 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (0.9ms)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:40:46 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:40:51 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:40:56 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (3.2ms)
+Completed 200 OK in 28ms (Views: 22.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:41:01 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:41:06 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (0.9ms)
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:41:11 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (2.2ms)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/22/api/messages?last_id=217" for ::1 at 2019-08-29 10:41:16 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"217", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '217')[0m
+  Rendered api/messages/index.json.jbuilder (1.3ms)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/groups/22/messages" for ::1 at 2019-08-29 10:41:18 +0900
+Processing by MessagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yTyp3QgLsVmlkPkhxQfHFX6Z8UKVn2FNekz1R0UCzRaq9u5uf9jWhlPqGFlT1UXcrIjLZVnV5sN1peTiRfVNyw==", "message"=>{"content"=>"csdcscsd", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fdb25ce3760 @tempfile=#<Tempfile:/var/folders/yd/ndls7vm953l7mc93f1dfysmm0000gn/T/RackMultipart20190829-3376-17wnok3.png>, @original_filename="ファイト犬1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"message[image]\"; filename=\"\xE3\x83\x95\xE3\x82\xA1\xE3\x82\xA4\xE3\x83\x88\xE7\x8A\xAC1.png\"\r\nContent-Type: image/png\r\n">}, "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `image`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('csdcscsd', 'ファイト犬1.png', 22, 4, '2019-08-29 01:41:19', '2019-08-29 01:41:19')[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  Rendering messages/create.json.jbuilder
+  Rendered messages/create.json.jbuilder (0.8ms)
+Completed 200 OK in 1266ms (Views: 11.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/groups/22/api/messages?last_id=218" for ::1 at 2019-08-29 10:41:21 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"218", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (1.0ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '218')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 17ms (Views: 9.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/groups/22/api/messages?last_id=218" for ::1 at 2019-08-29 10:41:26 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"218", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '218')[0m
+  Rendered api/messages/index.json.jbuilder (1.4ms)
+Completed 200 OK in 16ms (Views: 11.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=218" for ::1 at 2019-08-29 10:41:31 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"218", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '218')[0m
+  Rendered api/messages/index.json.jbuilder (1.3ms)
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=218" for ::1 at 2019-08-29 10:41:36 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"218", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '218')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/groups/22/messages" for ::1 at 2019-08-29 10:41:36 +0900
+Processing by MessagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yTyp3QgLsVmlkPkhxQfHFX6Z8UKVn2FNekz1R0UCzRaq9u5uf9jWhlPqGFlT1UXcrIjLZVnV5sN1peTiRfVNyw==", "message"=>{"content"=>"dsds"}, "group_id"=>"22"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('dsds', 22, 4, '2019-08-29 01:41:36', '2019-08-29 01:41:36')[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  Rendering messages/create.json.jbuilder
+  Rendered messages/create.json.jbuilder (0.5ms)
+Completed 200 OK in 23ms (Views: 9.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:41:41 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:41:46 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:41:51 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:41:57 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:42:01 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:42:06 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:42:11 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (0.9ms)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:42:16 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:42:22 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.6ms)
+Completed 200 OK in 27ms (Views: 17.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:42:26 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:42:32 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.3ms)
+Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:42:37 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (0.9ms)
+Completed 200 OK in 34ms (Views: 9.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:42:42 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:42:47 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:42:52 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 16ms (Views: 11.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:42:57 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:43:02 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:43:07 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 9.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:43:12 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 18ms (Views: 9.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:43:17 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:43:22 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 9.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:43:27 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:43:32 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 17ms (Views: 11.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:43:37 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:43:42 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:43:47 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 15ms (Views: 9.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:43:52 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.8ms)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:43:57 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:44:02 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (2.0ms)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:44:06 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:44:12 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (0.9ms)
+Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:44:16 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.8ms)
+Completed 200 OK in 17ms (Views: 11.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:44:22 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:44:27 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:44:31 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:44:36 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:44:41 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.7ms)
+Completed 200 OK in 18ms (Views: 12.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:44:46 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:44:51 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:44:57 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 9.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:45:02 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.3ms)
+Completed 200 OK in 18ms (Views: 13.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:45:07 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (1.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (2.7ms)
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:45:11 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.4ms)
+Completed 200 OK in 22ms (Views: 15.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:45:16 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 16ms (Views: 11.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:45:21 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.5ms)
+Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:45:27 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.6ms)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:45:32 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:45:36 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.3ms)
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:45:41 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.3ms)
+Completed 200 OK in 18ms (Views: 13.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:45:46 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 16ms (Views: 10.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/messages" for ::1 at 2019-08-29 10:45:47 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 21 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (11.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 22[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4[0m
+  Rendered collection of messages/_message.html.haml [4 times] (4.6ms)
+  Rendered messages/index.html.haml within layouts/application (27.3ms)
+  Rendered layouts/_notifications.html.haml (1.6ms)
+Completed 200 OK in 114ms (Views: 106.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/groups/22/api/messages?last_id=219" for ::1 at 2019-08-29 10:45:52 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"219", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '219')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/groups/22/messages" for ::1 at 2019-08-29 10:45:56 +0900
+Processing by MessagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qP5bPeriv4XgJBEwPVvxsAo1YJ1Lmih/8zyqg5WBpz3LNByOnTHYWhZe8EiriXN52CRauofQr/H81bsmlXYn4A==", "message"=>{"content"=>"s"}, "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('s', 22, 4, '2019-08-29 01:45:56', '2019-08-29 01:45:56')[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering messages/create.json.jbuilder
+  Rendered messages/create.json.jbuilder (0.7ms)
+Completed 200 OK in 28ms (Views: 11.3ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/groups/22/api/messages?last_id=220" for ::1 at 2019-08-29 10:45:57 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"220", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '220')[0m
+  Rendered api/messages/index.json.jbuilder (1.3ms)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=220" for ::1 at 2019-08-29 10:46:02 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"220", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '220')[0m
+  Rendered api/messages/index.json.jbuilder (1.3ms)
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=220" for ::1 at 2019-08-29 10:46:07 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"220", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '220')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=220" for ::1 at 2019-08-29 10:46:13 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"220", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '220')[0m
+  Rendered api/messages/index.json.jbuilder (1.8ms)
+Completed 200 OK in 20ms (Views: 13.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/22/messages" for ::1 at 2019-08-29 10:46:13 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"22"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (2.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 15 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 21 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  Rendered messages/_side_bar.html.haml (14.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 22[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4[0m
+  Rendered collection of messages/_message.html.haml [5 times] (4.7ms)
+  Rendered messages/index.html.haml within layouts/application (38.2ms)
+  Rendered layouts/_notifications.html.haml (1.6ms)
+Completed 200 OK in 92ms (Views: 80.7ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/groups/22/api/messages?last_id=220" for ::1 at 2019-08-29 10:46:17 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"220", "group_id"=>"22"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '220')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 15ms (Views: 8.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=220" for ::1 at 2019-08-29 10:46:18 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"220", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '220')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 14ms (Views: 9.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=220" for ::1 at 2019-08-29 10:46:22 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"220", "group_id"=>"22"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '220')[0m
+  Rendered api/messages/index.json.jbuilder (2.3ms)
+Completed 200 OK in 17ms (Views: 10.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/groups/22/api/messages?last_id=220" for ::1 at 2019-08-29 10:46:24 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"220", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '220')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=220" for ::1 at 2019-08-29 10:46:27 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"220", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '220')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 17ms (Views: 12.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=220" for ::1 at 2019-08-29 10:46:29 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"220", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '220')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 9.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/groups/22/messages" for ::1 at 2019-08-29 10:46:30 +0900
+Processing by MessagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qP5bPeriv4XgJBEwPVvxsAo1YJ1Lmih/8zyqg5WBpz3LNByOnTHYWhZe8EiriXN52CRauofQr/H81bsmlXYn4A==", "message"=>{"content"=>"svsv"}, "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('svsv', 22, 4, '2019-08-29 01:46:30', '2019-08-29 01:46:30')[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  Rendering messages/create.json.jbuilder
+  Rendered messages/create.json.jbuilder (0.7ms)
+Completed 200 OK in 22ms (Views: 10.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/groups/22/api/messages?last_id=221" for ::1 at 2019-08-29 10:46:32 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"221", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '221')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=220" for ::1 at 2019-08-29 10:46:33 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"220", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '220')[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4[0m
+  Rendered api/messages/index.json.jbuilder (2.5ms)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/22/api/messages?last_id=221" for ::1 at 2019-08-29 10:46:37 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"221", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '221')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=221" for ::1 at 2019-08-29 10:46:39 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"221", "group_id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '221')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=221" for ::1 at 2019-08-29 10:46:43 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"221", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '221')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=221" for ::1 at 2019-08-29 10:46:43 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"221", "group_id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '221')[0m
+  Rendered api/messages/index.json.jbuilder (1.4ms)
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/22/api/messages?last_id=221" for ::1 at 2019-08-29 10:46:48 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"221", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '221')[0m
+  Rendered api/messages/index.json.jbuilder (1.5ms)
+Completed 200 OK in 19ms (Views: 12.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/groups/22/messages" for ::1 at 2019-08-29 10:46:48 +0900
+Processing by MessagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6RQXXWaZX79bDfZjVk2j5ZCND75xQPfXOf0tRGILtQWK3lDuEUo4YK13FxvAnyEsQpw1mb0KcFk2FDzhYvw12A==", "message"=>{"content"=>"eeeeeeeeeeeeeeeeeeeeeeeeeee"}, "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('eeeeeeeeeeeeeeeeeeeeeeeeeee', 22, 4, '2019-08-29 01:46:48', '2019-08-29 01:46:48')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering messages/create.json.jbuilder
+  Rendered messages/create.json.jbuilder (0.5ms)
+Completed 200 OK in 16ms (Views: 8.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:46:48 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups/22/api/messages?last_id=221" for ::1 at 2019-08-29 10:46:52 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"221", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '221')[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4[0m
+  Rendered api/messages/index.json.jbuilder (2.6ms)
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:46:54 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:46:57 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.2ms)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:46:59 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:02 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:04 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:07 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:09 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:12 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (0.9ms)
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:14 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:17 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:20 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:22 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (0.9ms)
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:25 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:27 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (0.9ms)
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:29 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (8.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (0.9ms)
+Completed 200 OK in 27ms (Views: 10.3ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:32 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:34 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.0ms)
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:37 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/22/api/messages?last_id=222" for ::1 at 2019-08-29 10:47:39 +0900
+Processing by Api::MessagesController#index as JSON
+  Parameters: {"last_id"=>"222", "group_id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 22 LIMIT 1[0m
+  Rendering api/messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 22 AND (id > '222')[0m
+  Rendered api/messages/index.json.jbuilder (1.1ms)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.8ms)
+
+
